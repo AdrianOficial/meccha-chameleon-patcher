@@ -1,4 +1,4 @@
-Working Version: 3.3.0
+Working Version: 3.3.2
 
 # chameleon_hook.dll
 

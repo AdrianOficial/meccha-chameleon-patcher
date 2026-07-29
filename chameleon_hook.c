@@ -2,7 +2,9 @@
 #include <stdint.h>
 #include <string.h>
 
-#define WFSTRING_CTOR_RVA 0x12072F0
+/* RVAs below are for the 2026-07-29 build of PenguinHotel-Win64-Shipping.exe
+   (sha256 a816b81498074fb44af96bac79bdad84513ccf896907e6ec76da5c25daf40b63) */
+#define WFSTRING_CTOR_RVA 0x11ED530
 
 static void ensure_auth_ini(void) {
     char path[MAX_PATH];
@@ -51,7 +53,7 @@ typedef void *(*wfstrctor_t)(void *out, const wchar_t *wstr);
 
 #define NCAND 2
 
-static const uintptr_t g_rva[NCAND]   = {0x56E6FD0, 0x575B200};
+static const uintptr_t g_rva[NCAND]   = {0x5343540, 0x53B78D0};
 static const int       g_steal[NCAND]  = {18,        15};
 static const int       g_ripfix[NCAND] = {14,        -1};
 static fn_t            g_tramp[NCAND];
