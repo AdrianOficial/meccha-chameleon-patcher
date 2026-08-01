@@ -2,8 +2,8 @@
 #include <stdint.h>
 #include <string.h>
 
-/* RVAs below are for the 2026-07-29 build of PenguinHotel-Win64-Shipping.exe
-   (sha256 a816b81498074fb44af96bac79bdad84513ccf896907e6ec76da5c25daf40b63) */
+/* RVAs below are for the 2026-07-30 build of PenguinHotel-Win64-Shipping.exe
+   (sha256 001b329edb0f37b6d3157d8334edbd58a83d092d9748f9439dd1b59f2cace36a) */
 #define WFSTRING_CTOR_RVA 0x11ED530
 
 static void ensure_auth_ini(void) {
@@ -53,7 +53,7 @@ typedef void *(*wfstrctor_t)(void *out, const wchar_t *wstr);
 
 #define NCAND 2
 
-static const uintptr_t g_rva[NCAND]   = {0x5343540, 0x53B78D0};
+static const uintptr_t g_rva[NCAND]   = {0x5344EC0, 0x53B92F0};
 static const int       g_steal[NCAND]  = {18,        15};
 static const int       g_ripfix[NCAND] = {14,        -1};
 static fn_t            g_tramp[NCAND];
